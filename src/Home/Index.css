@@ -1,0 +1,217 @@
+.home-container{
+width: 100%;
+height: 100vh;
+display: flex;
+}
+.left-home-container{
+    width: 15%;
+    border-right: 1px solid black;
+    height: 100vh;
+    padding: 12px;
+}
+.left-home-icons{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.left-home-icons li{
+    list-style-type: none;
+    width: 180px;
+    height: 35px;
+  padding: 6px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-family: 14px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    
+}
+/* Make sure the branch list is hidden by default */
+.branch-list {
+  display: none;
+  list-style-type: none;
+ 
+  position: absolute; /* To position the branch list relative to the master item */
+  margin-bottom: -70px;
+ 
+}
+
+/* When hovering over the "Masters" item, display the branch list */
+.master-item:hover .branch-list {
+  display: block;
+}
+
+/* Optional: Add some padding to the list items for a better look */
+.branch-list li {
+  padding: 5px 10px;
+}
+
+/* Add some styling to the menu items */
+.left-home-icons li {
+  cursor: pointer;
+}
+
+.left-home-icons {
+  position: relative; /* Needed for absolute positioning of dropdown */
+}
+
+
+
+.icon{
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+}
+.icon-item {
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+}
+
+.icon-item.active {
+  background-color: #007bff; /* Replace with your preferred color */
+  color: white;
+}
+
+.icon-item:hover {
+  background-color: #0056b3; /* Optional hover effect */
+  color: white;
+}
+
+.master-item .branch-list {
+  margin-top: 5px;
+  display: none;
+}
+
+.master-item.active .branch-list {
+  display: block;
+}
+/* Container Styles */
+.right-home-container{
+    width: 100%;
+
+}/* Container Styles */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Individual Card Styles */
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 100px;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 15px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  /* Applying gradients to cards */
+  .card:nth-child(1) {
+    background: linear-gradient(326deg, #861657 0%, #ffa69e 74%);
+  }
+  
+  .card:nth-child(2) {
+    background: linear-gradient(326deg, #FF5F6D 0%, #FFC371 74%);
+  }
+  
+  .card:nth-child(3) {
+    background: linear-gradient(326deg, #2B86C5 0%, #BFE1F5 74%);
+  }
+  
+  .card:nth-child(4) {
+    background: linear-gradient(326deg, #06BEB6 0%, #48B1BF 74%);
+  }
+  
+  .card:nth-child(5) {
+    background: linear-gradient(326deg, #FF9A8B 0%, #D02D1A 74%);
+  }
+  
+  .card:nth-child(6) {
+    background: linear-gradient(326deg, #12C2E9 0%, #C471ED 74%);
+  }
+  
+  .card:nth-child(7) {
+    background: linear-gradient(326deg, #FFE000 0%, #FF8C00 74%);
+  }
+  
+  .card p {
+    margin: 5px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .card h1 {
+    font-size: 1.2rem;
+  }
+  .card-header {
+    display: flex;
+   
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .data-container{
+    margin-top: 20px;
+    margin-left: 10px;
+    border: 1px solid gray;
+    height: 400px;
+    padding: 10px;
+  }
+  .data-container h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-family: 22px;
+    
+  }
+  .data-container p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+  }
+
+  .dates{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .dropdown-selector {
+    width: 150px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    background: #fff;
+    color: #333;
+  }
+  
+  .dropdown-selector:hover {
+    border-color: #861657;
+  }
+  
+  .dropdown-selector:focus {
+    border-color: #ffa69e;
+    box-shadow: 0px 0px 5px rgba(134, 22, 87, 0.5);
+  }
+  
+  .date{
+    display: flex;
+  }
